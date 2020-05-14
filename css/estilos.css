@@ -1,0 +1,134 @@
+/* reset do css*/ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://www.publicdomainpictures.net/pictures/30000/nahled/background-pattern-black.jpg");
+    background-size: 100vw 100vh;
+    font-family: 'Handlee', cursive;
+    height:100vh;
+    font-size: 12px;
+  }
+/* media é como if, se a tela tiver pelo menos 400px, carregará o estilo */
+@media (min-width: 320px) {
+  body {
+    font-size: 10px;
+  }  
+}
+/*breakpoint*/
+@media (min-width: 375px) {
+  body {
+    font-size: 14px;
+  }  
+}
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+  .site-title{
+    background-image: url("https://media0.giphy.com/media/xT39CTrFW4nHLdBPpu/200w.webp?cid=ecf05e47f0710ba5ab1c918c2130e82223e57b1febae7108&rid=200w.webp");
+    background-size: auto 100vh;
+    justify-content: center;
+    padding: 20px;
+  }
+  .portifolio .grid{
+    grid-template-columns: 240px 240px;
+    justify-content: center;
+    align-content: center;
+  }  
+}
+@media(min-width: 880px){
+  .portifolio .grid{
+    grid-template-columns: 240px 240px 240px;
+    justify-content: center;
+    align-content: center;
+  }  
+
+}
+@media(min-width: 1200px){
+  body{
+    font-size: 20px;
+  }
+  .img-portfolio{
+    height: auto;
+    width: 100%;
+  }
+
+}
+
+
+  header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu{
+    background: black;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+  }
+  
+  .menu ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu li{
+    list-style: none;
+  }
+  .menu a{
+    display: block;
+    padding: 10px 20px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  .site-subtitle,
+  .site-title{
+    color: white;
+    text-align: center;
+    }
+    .site-title{
+      font-size: 4em;
+      font-family: 'Source Code Pro', monospace;
+      
+    }
+  .site-subtitle{
+    font-style: italic;
+    font-size: 2em;
+    font-family: 'Handlee', cursive;
+    
+  }
+  .img-portfolio{
+    height: 80px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 3px;
+  }
+  .portifolio{
+   color: white;
+   font-family: 'Handlee', cursive;
+   font-size: 1.2em;
+   /*background-color: hotpink;*/
+   padding: 0.5em;
+   height: 100vh;
+  }
+  .portifolio h2{
+   margin: 1em;
+  }
+  .portifolio .grid{
+    display: grid;
+    /*gap: 0.1em;*/
+  }
+  .portifolio figure{
+    text-align: center;
+    height: auto;
+  }
